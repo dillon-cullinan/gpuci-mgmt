@@ -75,8 +75,8 @@
     key: '{{ item }}'
   with_file:
     - goai-gpuci.id_rsa.pub
-    - jenkins-master.id_rsa.pub
-    - jenkins-aws-master.id_rsa.pub
+    - jenkins-main.id_rsa.pub
+    - jenkins-aws-main.id_rsa.pub
 
 - name: Create ubuntu home directory if not exists
   file:
